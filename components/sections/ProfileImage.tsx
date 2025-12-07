@@ -5,6 +5,7 @@ import { MessageCircle, X } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
+import { useSidebar } from "@/components/ui/sidebar";
 interface ProfileImageProps {
   imageUrl: string;
   firstName: string;
@@ -20,11 +21,7 @@ export function ProfileImage({
   const { isSignedIn } = useUser();
   const { openSignIn } = useClerk();
 
-  const toggleSidebar = () => {
-    console.log("toggleSidebar");
-  };
-
-  const open = false;
+  const { toggleSidebar, open } = useSidebar();
 
   return (
     <button
