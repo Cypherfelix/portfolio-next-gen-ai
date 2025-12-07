@@ -1,12 +1,13 @@
 import { Suspense } from "react";
 import { Sidebar, SidebarContent, SidebarRail } from "@/components/ui/sidebar";
+import ChatWrapper from "./chat/ChatWrapper";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar {...props}>
+    <Sidebar {...props} style={{}}>
       <SidebarContent className="h-full w-full bg-white">
         <Suspense fallback={<div>Loading...</div>}>
-          <div>This is the sidebar content</div>
+          <ChatWrapper />
         </Suspense>
       </SidebarContent>
       <SidebarRail />
