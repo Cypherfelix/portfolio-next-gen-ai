@@ -1,6 +1,7 @@
 import {
   AboutSection,
   HeroSection,
+  TestimonialsSection,
 } from "@/components/sections";
 
 async function PortfolioContent() {
@@ -8,7 +9,7 @@ async function PortfolioContent() {
     <>
       <HeroSection />
       <AboutSection />
-      {/* <TestimonialsSection /> */}
+      <TestimonialsSection />
       {/* <SkillsSection /> */}
       {/* <ExperienceSection /> */}
       {/* <EducationSection /> */}
