@@ -3,6 +3,7 @@ import {
   EducationSection,
   ExperienceSection,
   HeroSection,
+  ProjectsSection,
   SkillsSection,
   TestimonialsSection,
 } from "@/components/sections";
@@ -16,7 +17,7 @@ async function PortfolioContent() {
       <SkillsSection />
       <ExperienceSection />
       <EducationSection />
-      {/* <ProjectsSection /> */}
+      <ProjectsSection />
       {/* <CertificationsSection /> */}
       {/* <AchievementsSection /> */}
       {/* <ServicesSection /> */}
